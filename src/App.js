@@ -1,11 +1,12 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
-import BarChart from './components/BarChart';
-import LineChart from './components/LineChart';
-import PieChart from './components/PieChart';
-import DoughnutChart from './components/DoughnutChart';
-import {UserData} from './Data';
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Bar from './components/Bar';
+import Line from './components/Line';
+import Pie from './components/Pie';
+import Doughnut from './components/Doughnut';
+import Header from './Header';
+/*
 function App(){
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.year),
@@ -46,6 +47,27 @@ function App(){
        </div>
       </div>
     </div>
+  );
+}
+
+export default App;
+*/
+
+function App(){
+  
+  //Routes 내부는 url에 따라 각각 다른 위치를 보여 줌
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Routes> 
+          <Route exact path = "/" element = {<Header/>}/>
+          <Route path = "/bar" element = {<Bar/>}/>
+          <Route path = "/line" element = {<Line/>}/>
+          <Route path = "/pie" element = {<Pie/>}/>
+          <Route path = "/doughnut" element = {<Doughnut/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

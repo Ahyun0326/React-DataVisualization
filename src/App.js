@@ -1,12 +1,13 @@
-// import { useState } from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Bar from './components/Bar';
 import Line from './components/Line';
 import Pie from './components/Pie';
 import Doughnut from './components/Doughnut';
-import Header from './Header';
-/*
+import Main from './layout/Main';
+import { NavBarEx } from './layout/NavBarEx';
+
+/* 
 function App(){
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.year),
@@ -59,8 +60,9 @@ function App(){
   return (
     <BrowserRouter>
       <div className="App">
+        <NavBarEx/>
         <Routes> 
-          <Route exact path = "/" element = {<Header/>}/>
+          <Route exact path = "/" element = {<Main/>}/>
           <Route path = "/bar" element = {<Bar/>}/>
           <Route path = "/line" element = {<Line/>}/>
           <Route path = "/pie" element = {<Pie/>}/>

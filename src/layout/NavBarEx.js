@@ -9,15 +9,17 @@ export const NavBarEx = () => {
               <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
                       <Nav.Link href="/">Home</Nav.Link>
-                      
-                      <NavDropdown title="Charts" id="collasible-nav-dropdown">
+                      <Nav.Link href="/">Charts</Nav.Link>
+
+                      {/* <NavDropdown title="Charts" id="collasible-nav-dropdown">
                           <NavDropdown.Item href="/bar">Bar</NavDropdown.Item>
                           <NavDropdown.Item href="/line">Line</NavDropdown.Item>
                           <NavDropdown.Item href="/pie">Pie</NavDropdown.Item>
                           <NavDropdown.Item href="/doughnut">Doughnut</NavDropdown.Item>
                           <NavDropdown.Divider />
                           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                      </NavDropdown>
+                      </NavDropdown> */}
+                      
                   </Nav>
                   <Form className="d-flex">
                       <Form.Control

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+/*
 export const Header = styled.section `
     width: 100%;
     height: 80vh;
@@ -9,6 +10,8 @@ export const Header = styled.section `
     justify-content: center;
     overflow: hidden;
     align-items: center;
+  
+    
     &::before{
         content: '';
         position: absolute;
@@ -25,6 +28,7 @@ export const Header = styled.section `
         background-size: 100vw 200px;
         background-color: #282c34;
     }
+    
 `
 
 export const MainHeader = styled.div`
@@ -33,4 +37,24 @@ export const MainHeader = styled.div`
     margin: 0 auto;
     max-width: 500px;
     background-color: transparent;
+`
+*/
+
+export const MainHeader = styled.h1`
+    display: inline-flex;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 10px;
+    //background-color: gray;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-size: 80px;
+    border-bottom: solid 2px;
+    border-color: gray;
+`
+export const HeaderButton = styled.div`
+    position: relative;
+    top: 27%;
+    left: 10%;
 `

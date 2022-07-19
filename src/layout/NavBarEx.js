@@ -9,7 +9,7 @@ export const NavBarEx = () => {
               <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
                       <Nav.Link href="/">Home</Nav.Link>
-                      <Nav.Link href="/">Charts</Nav.Link>
+                      <Nav.Link href="/Charts">Charts</Nav.Link>
 
                       {/* <NavDropdown title="Charts" id="collasible-nav-dropdown">
                           <NavDropdown.Item href="/bar">Bar</NavDropdown.Item>

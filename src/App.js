@@ -1,10 +1,11 @@
-import './App.css';
+//import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Bar from './components/Bar';
 import Line from './components/Line';
 import Pie from './components/Pie';
 import Doughnut from './components/Doughnut';
 import Main from './layout/Main';
+import ChartPage from './layout/ChartPage.js'
 import { NavBarEx } from './layout/NavBarEx';
 
 /* 
@@ -51,7 +52,7 @@ function App(){
   );
 }
 
-export default App;
+export default App;`
 */
 
 function App(){
@@ -59,16 +60,15 @@ function App(){
   //Routes 내부는 url에 따라 각각 다른 위치를 보여 줌
   return (
     <BrowserRouter>
-      <div className="App">
         <NavBarEx/>
         <Routes> 
           <Route exact path = "/" element = {<Main/>}/>
+          <Route path='/charts' element = {<ChartPage/>}/>
           <Route path = "/bar" element = {<Bar/>}/>
           <Route path = "/line" element = {<Line/>}/>
           <Route path = "/pie" element = {<Pie/>}/>
           <Route path = "/doughnut" element = {<Doughnut/>}/>
-        </Routes>
-      </div>
+        </Routes>      
     </BrowserRouter>
   );
 }
